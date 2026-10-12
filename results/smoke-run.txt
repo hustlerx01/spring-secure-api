@@ -1,0 +1,7 @@
+## Smoke run 2026-10-11 22:11:18 IST — java -jar target/spring-secure-api-0.1.0.jar (H2, default profile)
+GET /v3/api-docs -> 200
+GET /swagger-ui/index.html -> 200
+GET /api/tickets -> 401
+POST /api/auth/register -> {"id":1,"username":"demo","role":"USER"}
+POST /api/tickets -> {"id":1,"title":"Suspicious login","description":null,"severity":"HIGH","status":"OPEN","owner":"demo","createdAt":"2026-10-11T16:41:19.333083759Z","updatedAt":null}
+GET /api/admin/users (USER token) -> 403
