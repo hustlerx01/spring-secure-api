@@ -1,0 +1,9 @@
+app:
+  jwt:
+    secret: test-secret-at-least-32-bytes-long-xxxxxxxx
+  lockout:
+    max-failures: 3
+    lock-seconds: 60
+  admin:
+    username: admin
+    password: AdminPassw0rd!
